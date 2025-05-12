@@ -1,0 +1,26 @@
+dataset:
+  root_path: /Users/duyan/datasets
+  name: YouTubeFaces
+  frame_images_path: /Users/duyan/datasets/YouTubeFaces/aligned_images_DB
+  meta_data_path: /Users/duyan/datasets/YouTubeFaces/meta_data/meta_and_splits.mat
+  descriptors_path: /Users/duyan/datasets/YouTubeFaces/descriptors_DB
+  std_face_size: [48, 48]
+training:
+  batch_size: 32
+  pose_clusters: 5
+  pose_subspace_dimension: 10
+  lmt_features_dimension: 68
+  pca_reduced_dimension: 50
+tracking:
+  adaptive_components: 10
+  lambda_a: 0.5
+  lambda_p: 1.0
+  lambda_s: 1.5
+  n_particles: 100
+  sigma: 0.1
+  std_size: [48, 48]
+recognition:
+  n_poses: 1
+  lda_dim: 6
+  desc_dim: 10
+  n_iter_hmm: 50
